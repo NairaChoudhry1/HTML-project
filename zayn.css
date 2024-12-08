@@ -14,15 +14,20 @@ header {
     color: white;
     padding: 10px 20px;
 }
-.container {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header h1 {
+h1 {
     font-size: 2rem;
 }
+
+h2 {
+    margin: 20px;
+}
+
 
 nav ul {
     list-style: none;
@@ -46,43 +51,47 @@ section {
     padding: 20px;
     text-align: center;
 }
-.img{
-    width: 300px;
-    height: 100px;
-    
 
-
-}
 #welcome {
     background-color: #ececec;
 }
+
 #albums {
     margin-top: 20px;
 }
+
+/* Albums Section */
 .album-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    display: flex;
+    justify-content: center;
     gap: 20px;
+    flex-wrap: wrap; /* Makes it responsive */
 }
-figure {
-    background-color: white;
+
+.album-item {
+    text-align: center;
+    width: 250px; /* Adjust the size of each album */
     border: 1px solid #ddd;
     border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 }
-figure img {
+
+.album-item img {
     width: 100%;
     height: auto;
-    border-bottom: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
-figure p {
-    padding: 10px;
+
+.album-item p {
     font-size: 1rem;
-    font-weight: bold;
     color: #333;
+    font-weight: bold;
     margin: 0;
 }
+
 #about {
     background-color: #1f1f2e;
     color: white;
@@ -95,8 +104,11 @@ footer {
     background-color: #1f1f2e;
     color: white;
 }
+
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    .container {
+    nav {
         flex-direction: column;
         text-align: center;
     }
@@ -105,7 +117,7 @@ footer {
         align-items: center;
     }
     .album-grid {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        gap: 20px;
     }
 }
-  
