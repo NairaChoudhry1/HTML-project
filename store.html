@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAYN Store - Exclusieve Merchandise</title>
+    <meta name="description" content="Welkom bij de officiële ZAYN Store. Koop exclusieve merchandise zoals T-shirts, posters, albums en meer.">
+    <link rel="stylesheet" href="store._styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="/index.html">ZAYN</a></h1>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/store.html">Store</a></li>
+                <li><a href="/about.html">Over ZAYN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="store">
+            <h2>Exclusieve Merchandise</h2>
+            <p>Ontdek de nieuwste merchandise van ZAYN. Perfect voor fans en verzamelaars!</p>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-item">
+                    <p>ZAYN T-shirt</p>
+                    <p>&euro; 19,99</p>
+                    <img src="B1pppR4gVKL._CLa_2140,2000_91+3865cnBL.png_0,0,2140,2000+0.0,0.0,2140.0,2000.0_AC_UY1000_.jpg" alt="T-shirt">
+                    <button class="btn">Toevoegen aan winkelwagen</button>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-item">
+                    <p>ZAYN poster</p>
+                    <p>&euro; 7,99</p>
+                    <img src="fposter,small,wall_texture,square_product,600x600.jpg" alt="poster">
+
+                    <button class="btn">Toevoegen aan winkelwagen</button>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-item">
+                    <p>ZAYN sweater</p>
+                    <p>&euro; 28,99</p>
+                    <img src="black_front.jpg" alt="sweater">
+                    <button class="btn">Toevoegen aan winkelwagen</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ZAYN Official. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Item toegevoegd aan je winkelwagen!');
+            });
+        });
+    </script>
+</body>
+</html>
